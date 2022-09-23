@@ -1,0 +1,24 @@
+every page:
+<head>
+<link>
+<script>
+<body>
+<h1>
+<ul>
+<a>
+<p>
+<img>
+
+
+at least 1 page:
+<b>
+<hr>
+<i>
+<blockquote>
+<table>
+   <tr>
+      <td>
+
+
+
+project must have at least 3 pages and navigation
