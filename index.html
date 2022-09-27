@@ -11,7 +11,150 @@
 </head>
 
 <body>
-  
-</body>
+  <!DOCTYPE HTML>
+<html>
+<head>
+   <title>controversial topics</title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+   <form action="survey.cgi" method="POST">
+ 
 
+ 
+   </form>
+   
+<!-- head - Googlefonts link -->
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">Abortion Survery</h1>
+  
+  
+  <!-- ------------------Personal Details---------------------------- -->
+  <fieldset>
+    <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+    <legend>Personal Details</legend>
+    <!-- formally describes the purpose of the fieldset it is included inside. -->
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    
+    <div>
+      
+      <label id="iq-label" for="iq">IQ:</label>
+      <input type="number" id="iq" name="iq" placeholder="Enter IQ here">   </div>
+
+    <!-- ------------------Radio Buttons-------------------------------- -->
+    <div>
+      <label for="Gender">Gender</label>
+      <p>
+        <input type="radio" name="gender" value="male" > Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        
+      </p>
+    </div>
+    <label for="date-label">Date of Survey Completion:</label>
+    <input type="date" name="bday">
+    
+  
+  </fieldset>
+
+  <fieldset>
+  <div>
+      <label for="yes">Thoughts on Abortion</label>
+      <p>
+        <input type="radio" name="yes" value="male" > Pro-Choice<br>
+        <input type="radio" name="yes" value="female"> Pro-Life<br>
+        </p>
+        </div>
+</fieldset>
+   <!-- ------------------Abortion-------------------------------- -->
+   
+    
+      
+     
+  <fieldset>
+    <label for="Gender">Check All That Apply</label>
+    <p>
+      <input type="checkbox" name="tattoo" value="tattoo">I or someone close to me has had an abortion <br>
+      <input type="checkbox" name="age" value="Car"> I have changed my opinion on abortion<br>
+      <input type="checkbox" name="car" value="car">I've gone through childbirth <br>
+      <input type="checkbox" name="work" value="work" > I work full-time<br>
+      <input type="checkbox" name="rich" value="rich" > My parents are rich<br>
+      <input type="checkbox" name="loc" value="loc" >'People will get one anyway, so it should be safe and legal' <br>
+    </p>
+  </fieldset>
+  
+  <!-- -----------------Dropdown menus--------------------------------- -->
+  
+  <fieldset>
+    <div>
+      <label for="politics">Political Persuasion:</label>
+      <select id="dropdown">
+  <option value="left">Left Wing</option>
+  <option value="right">Right Wing</option>
+  <option value="Liberal">Liberal</option>
+  <option value="conservative">Conservative</option>
+  <option value="nazi">Nazi</option>
+  <option value="communist">Communist</option>
+  </select>
+
+      <label for="politics">Education Level Completed:</label>
+      <select id="dropdown2">
+  <option value="University">University</option>
+  <option value="College">College</option>
+  <option value="Secondary">High School</option>  
+  <option value="None">None</option>
+  </select>
+    </div>
+  </fieldset>
+
+  <!-- --------------------Text Areas------------------------------ -->
+  
+  <fieldset>
+    <legend>Essay Section</legend>
+    <div>
+      <label for="msg"></label>
+      <p> explain your opinion. be sure to include any details not mentioned on the survey</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    
+
+  <div id="submitbutton">
+    <button type="submit" id="submit">Send your application</button>   </div>
+
+</form>
+  </div>
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
+
+<div id="results">
+  <div class="section-1-results"></div>
+ <br>
+ <div class="section-2-results"></div>
+</div>
+
+<script>
+
+//Results for each div
+let section1Res = document.querySelector('.section-1-results')
+let section2Res = document.querySelector('.section-2-results')
+
+//Get data via URL
+let urlParams = new URLSearchParams(window.location.thankyou.html);
+let section1 = urlParams.get('section1'); //section1
+let section2 = urlParams.get('section2'); //section2
+
+//Apply results in new page
+section1Res.innerHTML = section1
+section2Res.innerHTML = section2
+
+</script>
+</body>
+</html>
+</body>
+<div>
+  if you would like to check out my other works they are <br>
+  <a href="file:///home/linus/html/atg.html"> Here </a> <br>
+<a href="file:///home/linus/html/joa.html">  Here </a>
+</div>
 </html>
