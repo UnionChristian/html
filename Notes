@@ -1,0 +1,2 @@
+1: b, hr, i, blockquote, table (tr(td))
+Every: head, link, script, body, h1, ul (li), a, p, img
